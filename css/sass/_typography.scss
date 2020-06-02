@@ -1,0 +1,85 @@
+// Global
+html {
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+body {
+  @include fontStyle(1rem, 1.6, $text, $body);
+}
+
+// h1,
+// h2,
+// h3,
+// h4 {
+//   font-family: $header;
+//   font-weight: 500;
+// }
+
+// p {
+//   @include fontStyle(1rem, 1.6, $text, $header);
+// }
+
+// Components
+
+.calculator-info {
+  h2 {
+    @include fontStyle(64px, 110.8%, $text, $header);
+    font-weight: bold;
+  }
+  p {
+    @include fontStyle(20px, 140%, $text, $body);
+  }
+  .btn {
+    @include fontStyle(17.55px, 24px, #fff, $body);
+  }
+}
+
+.calculator-questions {
+  h3 {
+    @include fontStyle(32px, 140%, #fff, $body);
+    font-weight: bold;
+  }
+  h4 {
+    @include fontStyle(20px, 140%, #fff, $body);
+  }
+}
+
+.question-content {
+  p {
+    @include fontStyle(18px, 140%, #fff, $body);
+    font-weight: 500;
+  }
+  .btn {
+    @include fontStyle(17.52px, 21px, #fff, $body);
+  }
+  #result {
+    #total-cost {
+      @include fontStyle(14px, 140%, #fff, $body);
+    }
+    #cost {
+      @include fontStyle(52px, 140%, #fff, $body);
+    }
+    p:last-of-type {
+      @include fontStyle(13px, 140%, #D7E1FF, $body);
+    }
+  }
+}
+
+#back {
+  p {
+    @include fontStyle(14px, 140%, #fff, $body);
+  }
+}
+
+.btn {
+  @include fontStyle(17.55px, 24px, #fff, $body);
+  text-align: center;
+}
+
+// .btn {
+//   @include fontStyle(1.125rem, 1.1, $secondary, $body);
+//   font-weight: 600;
+//   letter-spacing: 0.05em;
+//   text-align: center;
+// }

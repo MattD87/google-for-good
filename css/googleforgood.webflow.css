@@ -1547,9 +1547,13 @@ figcaption {
 }
 
 .body {
-  margin-right: 34px;
+  /* margin-right: 34px;
   padding-bottom: 0px;
-  padding-left: 64px;
+  padding-left: 64px; */
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .grid {
