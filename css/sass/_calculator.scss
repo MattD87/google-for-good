@@ -1,0 +1,116 @@
+.calculator-container {
+  background: #fefefe;
+  height: 500px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculator-info {
+  background: url("../assets/shapes.png");
+  width: 61.8%;
+  height: 100%;
+  padding-left: 10.6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    padding: 35px 0;
+    width: 55%;
+  }
+  .btn {
+    background: linear-gradient(90deg, #4285f4 0%, #4255f4 100%);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
+      0px 2px 6px rgba(66, 133, 244, 0.12),
+      0px 10px 20px rgba(66, 133, 244, 0.18);
+    border-radius: 4.86779px;
+    border: 1px solid #fefefe;
+    width: 194.71px;
+    height: 46.73px;
+    transition: all 0.3s;
+  }
+  .btn:hover {
+    background: #fff;
+    color: #000;    
+    border: 1px solid #4255f4;
+  }
+}
+
+.calculator-questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 38.2%;
+  height: 86.8%;
+  padding: 37px 75px 36px 73px;
+  background: linear-gradient(128.28deg, $text 0%, #425ef4 100%);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
+    0px 2px 6px rgba(66, 94, 244, 0.12), 0px 10px 20px rgba(66, 94, 244, 0.18);
+  border-radius: 10px 0 0 10px;
+  .line {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #77aaff;
+    margin: 45px 0;
+  }
+  .button-container {
+    display: flex;
+    margin-top: 24px;
+    .btn {
+      background: $secondary;
+      border: 0.973558px solid #2949e8;
+      box-sizing: border-box;
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
+        0px 0px 2px rgba(45, 75, 227, 0.12), 0px 4px 8px rgba(18, 49, 203, 0.18);
+      border-radius: 4.86779px;
+      width: 195px;
+      height: 70px;
+    }
+    .btn:first-of-type {
+      margin-right: 15px;
+    }
+    .btn:hover {
+      background: #ffffff;
+    }
+  }
+  .question-content {
+    // .question, .button-container {
+    //   display: none;
+    // }
+    #result .row{
+      display: flex;
+      flex-wrap: nowrap;
+      padding-top: 29px;
+      img {
+        width: initial;
+        height: auto;
+        margin-right: 16px;
+      }
+      p {
+        width: 75%;
+        // flex: 2;
+      }
+    }
+    #result {
+      display: none;
+    }
+  }
+  #back {
+    padding-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    visibility: hidden;
+    a {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: initial;
+      padding-right: 10px;
+    }
+  }
+}
+
+.mobile-wave {
+  display: none;
+}

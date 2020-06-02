@@ -1,0 +1,31 @@
+//====================
+// Colours
+//====================
+$main: #4275F4;
+$text: #4285F4;
+$secondary: #2D4BE3;
+$mobile: #4266F4;
+$background: #FEFEFE;
+
+//====================
+// Fonts
+//====================
+$header: "Open Sans", sans-serif;
+$body: "Roboto", Arial, Helvetica, sans-serif;
+
+//====================
+// Mixins
+//====================
+@mixin fontStyle($size, $lh, $color, $fam: $body) {
+  font-family: $fam;
+  font-size: $size;
+  line-height: $lh;
+  color: $color;
+}
+
+@mixin flex($direction, $justContent: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justContent;
+  align-items: center;
+}
