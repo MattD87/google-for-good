@@ -237,12 +237,12 @@ figcaption {
 
 .button.cc-jumbo-button {
   padding: 16px 35px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 26px;
 }
 
 .button.cc-jumbo-button.cc-jumbo-white {
-  padding-right: 218px;
+  /* padding-right: 218px; */
   float: left;
   clear: left;
   background-color: #4285f4;
@@ -250,6 +250,7 @@ figcaption {
   background-size: auto;
   background-repeat: repeat;
   color: #000;
+  width: 50%;
 }
 
 .button.cc-jumbo-button.cc-jumbo-white:hover {
@@ -335,7 +336,9 @@ figcaption {
   margin-bottom: 10px;
   float: left;
   clear: none;
-  opacity: 0.6;
+  opacity: 0.8;
+  /* color: #234d91; */
+  color: black;
   text-align: left;
 }
 
@@ -546,8 +549,8 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 49px;
-  padding-bottom: 49px;
+  /* padding-top: 49px; */
+  /* padding-bottom: 49px; */
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -557,6 +560,11 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   opacity: 1;
+}
+
+.footer {
+  margin-top: 40px;
+  border-top: 1px solid #dbd6d6;
 }
 
 .webflow-link {
@@ -692,8 +700,9 @@ figcaption {
 }
 
 .section-heading-wrap {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  /* margin-top: 80px; */
+  /* margin-bottom: 80px; */
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -1354,6 +1363,7 @@ figcaption {
 .heading {
   margin-left: -148px;
   color: #4285f4;
+  /* color: #2170F2; */
   font-size: 15px;
 }
 
@@ -1388,20 +1398,21 @@ figcaption {
   position: relative;
   left: 5px;
   right: -23px;
-  bottom: -3px;
+  /* bottom: -3px; */
   margin-top: 23px;
   text-align: left;
 }
 
 .heading-4 {
-  margin-top: 28px;
+  /* margin-top: 28px; */
   padding-top: 0px;
   font-size: 16px;
   text-align: left;
 }
 
 .heading-5 {
-  margin-top: -9px;
+  /* margin-top: -9px; */
+  margin-top: 25px;
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 16px;
@@ -1409,7 +1420,7 @@ figcaption {
 }
 
 .image-15 {
-  margin-bottom: 64px;
+  /* margin-bottom: 64px; */
   padding-left: 35px;
   text-align: left;
 }
@@ -1528,7 +1539,7 @@ figcaption {
   padding-right: 0px;
   padding-bottom: 26px;
   padding-left: 0px;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   text-align: center;
 }
 
@@ -1605,9 +1616,14 @@ figcaption {
 }
 
 .text-block-3 {
-  padding-right: 0px;
-  padding-left: 134px;
+  /* padding-right: 0px; */
+  /* padding-left: 134px; */
   text-align: center;
+}
+
+#form-submit-button {
+  /* margin: 0 auto; */
+  /* margin-left: 50px; */
 }
 
 .grid-2 {
@@ -1616,10 +1632,10 @@ figcaption {
   margin-bottom: 76px;
   padding-top: 42px;
   justify-items: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
@@ -1641,14 +1657,19 @@ figcaption {
 .image-22 {
   position: relative;
   left: -14px;
-  top: 20px;
+  /* top: 20px; */
 }
+
+/* .image-13, .image-14, .image-15, .image-22 {
+  width: 100px;
+  height: 100px;
+} */
 
 .text-block-5 {
   color: #4285f4;
 }
 
-.heading-7 {
+/* .heading-7 {
   font-size: 14px;
 }
 
@@ -1660,6 +1681,17 @@ figcaption {
   text-align: left;
   text-decoration: none;
   text-transform: none;
+} */
+
+.heading-process {
+  font-size: 16px;
+  /* font-weight: bold; */
+  margin: 10px 0 5px;
+}
+
+#OUR-PROMISE h1 {
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .bold-text-2 {
@@ -1728,7 +1760,7 @@ figcaption {
   justify-content: center;
 }
 
-.container-7 {
+/* .container-7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1738,9 +1770,9 @@ figcaption {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
+} */
 
-.container-8 {
+.container-7, .container-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1753,6 +1785,8 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .image-26 {
