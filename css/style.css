@@ -701,6 +701,11 @@ button[disabled] {
     min-height: 291px;
   }
 }
+@media (max-width: 479px) {
+  .calculator-container .calculator-info h2 {
+    font-size: 50px;
+  }
+}
 
 @media (max-width: 420px) {
   .calculator-container .calculator-info {
