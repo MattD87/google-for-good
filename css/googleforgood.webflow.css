@@ -1540,12 +1540,13 @@ figcaption {
 
 .text-block-2 {
   max-height: none;
-  max-width: none;
+  /* max-width: none; */
   padding-right: 0px;
   padding-bottom: 26px;
   padding-left: 0px;
   /* opacity: 0.6; */
   text-align: center;
+  width: 100%;
 }
 
 .div-block-2 {
@@ -1709,6 +1710,11 @@ figcaption {
   /* margin-top: 40px; */
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.heading-9, .work-heading, #Oprocess, .heading-6 {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .image-23 {
