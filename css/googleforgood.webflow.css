@@ -626,6 +626,10 @@ figcaption {
   text-align: center;
 }
 
+#OUR-SERVICES .w-row {
+  padding-left: 20px;
+}
+
 .intro-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2147,6 +2151,9 @@ figcaption {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+  }
+  #OUR-SERVICES .w-row {
+    padding-left: 0;
   }
   .w-col-3 {
     width: 50%;
