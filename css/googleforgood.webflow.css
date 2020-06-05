@@ -624,7 +624,7 @@ figcaption {
 }
 
 #OUR-SERVICES .w-row {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .intro-header {
@@ -1556,7 +1556,7 @@ figcaption {
 }
 
 .body {
-  padding: 0 20px;
+  padding-left: 0 20px;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
