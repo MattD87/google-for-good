@@ -348,10 +348,14 @@ figcaption {
   margin-left: -130px;
   padding-left: 0px;
   color: #000;
-  font-size: 64px;
+  font-size: 60px;
   line-height: 80px;
   text-align: center;
   text-transform: none;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .heading-jumbo.cc-white-heading-jumbo {
