@@ -1,10 +1,8 @@
 //variables
 var score = 0;
 var currentQ = 0;
-// let noCost = false;
 
-var questions = [
-  {
+var questions = [{
     order: 1,
     question: "Do you have a Google Ad Grant Account?",
   },
@@ -18,13 +16,11 @@ var questions = [
   },
   {
     order: 4,
-    question:
-      "Do you want us to apply for a Google Ad Grant account for you? This includes account setup after the account is approved.",
+    question: "Do you want us to apply for a Google Ad Grant account for you? This includes account setup after the account is approved.",
   },
   {
     order: 5,
-    question:
-      "Do you want us to manage your accounts throughout the year after the application is completed? Including the first account setup.",
+    question: "Do you want us to manage your accounts throughout the year after the application is completed? Including the first account setup.",
   },
 ];
 
@@ -66,7 +62,6 @@ function checkAnswer() {
   } else if ($(`button.selected`).is("#no") && question == 2) {
     currentQ = 2;
     $("#no").prop("disabled", true);
-    // $("#no:hover").css("background", "#2D4BE3");
   }
   //question 3
   if ($(`button.selected`).is("#yes") && question == 3) {
@@ -75,15 +70,14 @@ function checkAnswer() {
   } else if ($(`button.selected`).is("#no") && question == 3) {
     score = "0";
     currentQ = 10;
-  } 
+  }
   //question 4
   if ($(`button.selected`).is("#yes") && question == 4) {
     currentQ++
   } else if ($(`button.selected`).is("#no") && question == 4) {
-    // noCost = true;
     $("#no").prop("disabled", true);
     currentQ++
-  } 
+  }
   //question 5
   if ($(`button.selected`).is("#yes") && question == 5) {
     score = "2500";
@@ -91,10 +85,7 @@ function checkAnswer() {
   } else if ($(`button.selected`).is("#no") && question == 5) {
     score = "7500";
     currentQ++;
-  } // else if ($(`button.selected`).is("#no") && question == 5 && noCost == true) {
-  //   score = "0";
-  //   currentQ++;
-  // }   
+  }
   //next question or results
   if (currentQ >= questions.length) {
     showResults();
@@ -106,7 +97,11 @@ function checkAnswer() {
 function showResults() {
   $(".question").hide();
   $(".button-container").hide();
-  $("#cost").text(`${score}`);
+  if (score === "2000" || score === "2500") {
+    $("#total-cost").html(`$ <span id="cost">${score}</span> /month`);
+  } else if (score === "6000" || score === "7500") {
+    $("#total-cost").html(`$ <span id="cost">${score}</span>`);
+  }
   $("#result").fadeIn();
   $("#back p").text("start");
 }
