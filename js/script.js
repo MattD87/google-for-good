@@ -1,7 +1,6 @@
 //variables
 var score = 0;
 var currentQ = 0;
-// let noCost = false;
 
 var questions = [
   {
@@ -66,7 +65,6 @@ function checkAnswer() {
   } else if ($(`button.selected`).is("#no") && question == 2) {
     currentQ = 2;
     $("#no").prop("disabled", true);
-    // $("#no:hover").css("background", "#2D4BE3");
   }
   //question 3
   if ($(`button.selected`).is("#yes") && question == 3) {
@@ -80,7 +78,6 @@ function checkAnswer() {
   if ($(`button.selected`).is("#yes") && question == 4) {
     currentQ++
   } else if ($(`button.selected`).is("#no") && question == 4) {
-    // noCost = true;
     $("#no").prop("disabled", true);
     currentQ++
   } 
@@ -91,10 +88,7 @@ function checkAnswer() {
   } else if ($(`button.selected`).is("#no") && question == 5) {
     score = "7500";
     currentQ++;
-  } // else if ($(`button.selected`).is("#no") && question == 5 && noCost == true) {
-  //   score = "0";
-  //   currentQ++;
-  // }   
+  } 
   //next question or results
   if (currentQ >= questions.length) {
     showResults();
@@ -106,7 +100,11 @@ function checkAnswer() {
 function showResults() {
   $(".question").hide();
   $(".button-container").hide();
-  $("#cost").text(`${score}`);
+  if (score === "2000" || score === "2500") {
+    $("#total-cost").html(`$ <span id="cost">${score}</span> /month`);
+  } else if (score === "6000" || score === "7500") {
+    $("#total-cost").html(`$ <span id="cost">${score}</span>`);
+  }
   $("#result").fadeIn();
   $("#back p").text("start");
 }
