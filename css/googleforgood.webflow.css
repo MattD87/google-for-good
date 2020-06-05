@@ -562,9 +562,19 @@ figcaption {
   opacity: 1;
 }
 
-.footer {
+.social-footer {
   margin-top: 40px;
   border-top: 1px solid #dbd6d6;
+}
+
+.footer {
+  color: #4285f4;
+  text-align: center;
+  font-weight: bold;
+}
+.footer a {
+  display: inline;
+  color: #abb64a;
 }
 
 .webflow-link {
@@ -3048,4 +3058,8 @@ figcaption {
     -ms-grid-row-span: 1;
     grid-row-end: 7;
   }
+}
+
+.container-6, .container-7 img, .container-8 img, .container-10 img {
+  display: none;
 }
