@@ -270,9 +270,9 @@
     </div>
     <!-- <div id="CTA" class="container"></div> -->
   </div>
-  <div class="section cc-cta">
+  <!-- <div class="section cc-cta">
     <div class="container"></div>
-  </div>
+  </div> -->
   <!-- Calculator here  -->
   <div id="calculator" class="wrapper">
     <div class="calculator-container row">
@@ -289,8 +289,8 @@
       </div>
       <div class="calculator-questions">
         <div class="content-container">
-          <h3>Service Calculator</h3>
-          <h4>Sub heading</h4>
+          <h3>Price Calculator</h3>
+          <h4>for Ad Grants</h4>
           <span class="line"></span>
 
           <div class="question-content">
@@ -338,11 +338,10 @@
     </div>
     <div class="w-container">
       <div class="w-layout-grid grid-2">
-        <img src="images/Mobile.png" width="20" height="" id="w-node-4144960600b2-4115c968" alt="" /><div>416-588-7780</div><img
+        <img src="images/Mobile.png" width="20" height="" id="w-node-4144960600b2-4115c968" alt="" /><div><a href="tel:1-416-588-7780">416-588-7780</a></div><img
           src="images/Laptop_1.png" width="66" srcset="images/Laptop_1-p-500.png 500w, images/Laptop_1.png 733w"
           sizes="(max-width: 479px) 8.640625px, (max-width: 767px) 9vw, 66px" id="w-node-0f4a382f879b-4115c968"
           alt="" />
-        <!-- <div>416-588-7780</div> -->
         <div>
           <a href="mailto:inquiry@hjcnewmedia.com">inquiry@hjcnewmedia.com</a>
         </div>
@@ -356,16 +355,31 @@
       <div class="div-block-2"></div>
       <div class="div-block-2 w-clearfix">
         <div class="form-block w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" class="form w-clearfix">
-            <label for="name">Name</label><input type="text" class="text-field-2 w-input" maxlength="256" name="name-2"
-              data-name="Name 2" placeholder="" id="name-2" required="" /><label for="email-address">email
-              Address</label><input type="email" class="text-field-3 w-input" maxlength="256" name="email-address-2"
-              data-name="Email Address 2" placeholder="" id="email-address-2" required="" /><label
-              for="ORG">organization</label><input type="text" class="w-input" maxlength="256" name="ORG-2"
-              data-name="ORG 2" placeholder="" id="ORG-2" required="" /><label for="how-can-we-help">How can we
-              help?</label><input type="text" maxlength="256" name="how-can-we-help-2" data-name="How Can We Help 2"
-              placeholder="" id="how-can-we-help-2" class="text-field-4 w-input" /><input type="submit" value="Submit"
-              data-wait="Please wait..." id="form-submit-button" class="submit-button-4 w-button" />
+          <form method="POST" action="https://secure3.convio.net/hjcnm/site/SSurvey" id="email-form" name="email-form" data-name="Email Form" class="form w-clearfix">
+
+            <label for="3539_5229_1_4629">Name</label>
+            <input type="text" class="text-field-2 w-input" maxlength="40" name="3539_5229_1_4629"
+              data-name="3539_5229_1_4629" id="3539_5229_1_4629" required />
+
+            <label for="3539_5229_2_4631">email Address</label>
+            <input type="text" class="text-field-3 w-input" maxlength="40" name="3539_5229_2_4631" data-name="3539_5229_2_4631" id="3539_5229_2_4631" required />
+
+            <label for="3539_5229_3_4623">organization</label>
+            <input type="text" class="w-input" maxlength="40" name="3539_5229_3_4623"
+              data-name="3539_5229_3_4623" id="3539_5229_3_4623" />
+
+            <label for="3539_5229_4_4625">How can we help?</label>
+            <input type="text" maxlength="256" name="3539_5229_4_4625" data-name="3539_5229_4_4625" id="3539_5229_4_4625" class="text-field-4 w-input" />
+
+            <input type="submit" value="Submit" name="ACTION_SUBMIT_SURVEY_RESPONSE" id="ACTION_SUBMIT_SURVEY_RESPONSE" data-wait="Please wait..." class="submit-button-4 w-button" />
+            <input type="hidden" name="SURVEY_ID" id="SURVEY_ID" value="5229" />
+
+            <div style="display:none">
+              <label for="denySubmit">Spam Control Text:</label>&nbsp;
+              <input type="text" name="denySubmit" id="denySubmit" value=""
+                alt="This field is used to prevent form submission by scripts.">
+              Please leave this field empty
+            </div>
           </form>
 
           <div class="w-form-done">
@@ -384,8 +398,8 @@
     </div>
   </div>
   <div class="container-5 w-container"></div>
-  <footer class="section">
-    <div class="container footer">
+  <div class="section">
+    <div class="container social-footer">
       <div class="footer-wrap">
         <a href="https://www.linkedin.com/company/hjc" class="w-inline-block"><img src="images/Untitled-design-25.png"
             width="103" alt="" /></a><a href="https://twitter.com/hjcnewmedia" class="w-inline-block"><img
@@ -393,6 +407,9 @@
           class="w-inline-block"><img src="images/Untitled-design-23.png" width="103" alt="" class="image-17" /></a>
       </div>
     </div>
+  </div>
+  <footer class="footer">
+    <p>Google for Good, powerered by <a href="hjcnewmedia.com">hjc</a>.</p>
   </footer>
   <!-- scripts -->
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ec8135bc44bab6fa668ba86"
